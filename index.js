@@ -1,7 +1,7 @@
-'use strict'
+import { send } from 'micro'
+import randomCombo from 'random-a11y-combo'
 
-module.exports = function randomA11yComboApi (options) {
-  options = options || {}
-
-  return true
+export default async (req, res) => {
+  res.setHeader('Access-Control-Allow-Origin', '*')
+  send(res, 200, randomCombo())
 }

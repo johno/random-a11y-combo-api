@@ -1,20 +1,24 @@
-# random-a11y-combo-api [![Build Status](https://secure.travis-ci.org/johnotander/random-a11y-combo-api.svg?branch=master)](https://travis-ci.org/johnotander/random-a11y-combo-api) [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat)](https://github.com/feross/standard)
+# random-a11y-combo-api
 
-A microservice to get random a11y combos
+A microservice to get random a11y combos.
 
 ## Installation
 
 ```bash
-npm install --save random-a11y-combo-api
+git clone https://github.com/johnotander/random-a11y-combo-api.git && cd $_
+npm i
+npm start
 ```
 
 ## Usage
 
-```javascript
-var randomA11yComboApi = require('random-a11y-combo-api')
-
-randomA11yComboApi()  // => true
 ```
+curl <random-a11y-combo-api-url>
+```
+
+## Deployment
+
+This microservice is deployed to [`now`](https://zeit.com/now).
 
 ## License
 
